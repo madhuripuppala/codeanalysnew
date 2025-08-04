@@ -19,7 +19,7 @@ app.use(cors()); // Enable CORS for all origins (for development)
 app.use(express.json()); // Parse JSON request bodies
 
 // Serve static files from the React app 
-app.use(express.static(path.join(__dirname, '..', 'frontend', 'build')));
+app.use(express.static(path.join(__dirname, 'frontend', 'build')));
 
 // Endpoint to analyze code and get recommendations
 app.post('/analyze-code', async (req, res) => {
